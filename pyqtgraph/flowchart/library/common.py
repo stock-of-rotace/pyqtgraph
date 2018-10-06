@@ -66,6 +66,8 @@ def generateUi(opts):
             #w = ColorMapper()
         elif t == 'color':
             w = ColorButton()
+        elif t == 'button':
+            w = QtGui.QPushButton()
         else:
             raise Exception("Unknown widget type '%s'" % str(t))
 
